@@ -6,11 +6,11 @@
   justify-content: center;
   width: 100%;
   flex-direction: column;
+  margin-top: 74px;
   &__title {
     font-size: 2rem;
     font-weight: 700;
     color: $secondary;
-    margin-top: 74px;
   }
 
   &__description {
