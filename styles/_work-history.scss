@@ -1,0 +1,79 @@
+@import './variables.scss';
+
+.work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin: 74px 0;
+
+  .divider {
+    color: $divider;
+    margin: 16px 32px;
+    height: 2px;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $secondary;
+  }
+
+  &__description {
+    color: $gray;
+    margin-top: 16px;
+    max-width: 438px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 970px;
+    width: 100%;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    text-transform: capitalize;
+    background-color: white;
+    &__date {
+      margin-top: 8px;
+    }
+    .date {
+      width: 97px;
+      height: 10px;
+      color: white;
+      background-color: $primary;
+      padding: 2px 4px;
+      font-size: 0.75rem;
+      margin-left: 12px;
+    }
+    &__field {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+    }
+    &__info {
+      width: 536px;
+
+      &__title {
+      }
+      &__description {
+        color: $gray;
+        margin-top: 16px;
+        max-width: 438px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: justify;
+      }
+    }
+  }
+}
