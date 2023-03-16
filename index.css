@@ -12,7 +12,10 @@
   margin: 0 auto;
 }
 .app .primary {
-  color: #FFB400;
+  color: #ffb400;
+}
+.app .secondary {
+  color: #2b2b2b;
 }
 
 .intro {
@@ -29,7 +32,7 @@
 }
 .intro__content__title {
   font-size: 3rem;
-  color: #2B2B2B;
+  color: #2b2b2b;
   margin: 8px 0;
 }
 .intro__content__description {
@@ -47,7 +50,7 @@
 }
 .intro__content__action button {
   padding: 16px 32px;
-  background-color: #FFB400;
+  background-color: #ffb400;
   text-align: center;
   border: none;
   border-radius: 4px;
@@ -67,12 +70,12 @@
   justify-content: center;
   width: 100%;
   flex-direction: column;
+  margin-top: 74px;
 }
 .services__title {
   font-size: 2rem;
   font-weight: 700;
-  color: #2B2B2B;
-  margin-top: 74px;
+  color: #2b2b2b;
 }
 .services__description {
   color: #767676;
@@ -103,7 +106,7 @@
   height: 74px;
 }
 .services .service__title {
-  color: #2B2B2B;
+  color: #2b2b2b;
   text-transform: capitalize;
 }
 .services .service__description {
@@ -112,6 +115,75 @@
   line-height: 24px;
   text-transform: capitalize;
   text-align: center;
+}
+
+.education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 74px;
+}
+.education .divider {
+  color: #f0f0f6;
+  margin: 16px 32px;
+  height: 2px;
+}
+.education__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+.education__description {
+  color: #767676;
+  margin-top: 16px;
+  max-width: 438px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 24px;
+}
+.education__content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 970px;
+  width: 100%;
+}
+.education__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px;
+  text-transform: capitalize;
+  background-color: white;
+}
+.education__item__date {
+  margin-top: 8px;
+}
+.education__item .date {
+  width: 97px;
+  height: 10px;
+  color: white;
+  background-color: #ffb400;
+  padding: 2px 4px;
+  font-size: 0.75rem;
+  margin-left: 12px;
+}
+.education__item__field {
+  display: flex;
+  flex-direction: column;
+}
+.education__item__info {
+  width: 536px;
+}
+.education__item__info__description {
+  color: #767676;
+  margin-top: 16px;
+  max-width: 438px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=index.css.map */
