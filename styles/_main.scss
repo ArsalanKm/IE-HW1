@@ -7,6 +7,7 @@
 .app {
   background-color: #e5e5e5;
   max-width: 1326px;
+  display: flex;
   margin: 0 auto;
   .content {
     max-width: 970px;
@@ -19,5 +20,21 @@
 
   .secondary {
     color: $secondary;
+  }
+
+  button {
+    padding: 16px 32px;
+    background-color: $primary;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+    img {
+      margin-left: 10px;
+      width: 10px;
+      height: 10px;
+    }
   }
 }

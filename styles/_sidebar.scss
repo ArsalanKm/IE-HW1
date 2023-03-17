@@ -1,0 +1,115 @@
+@import './variables.scss';
+
+.sidebar {
+  width: 305px;
+  padding: 0 42px;
+  position: sticky;
+  left: 0;
+  display: block;
+  height: 100%;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__info {
+    flex-direction: column;
+    width: 150px;
+
+    &__image {
+      border-radius: 50%;
+    }
+
+    &__name {
+      font-size: 1.125rem;
+      color: $secondary;
+    }
+
+    &__position {
+      color: $gray;
+    }
+  }
+
+  .icons__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    .icon {
+      border-radius: 50%;
+      background-color: $primary;
+      width: 24px;
+      height: 21px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  .personal__info {
+    width: 100%;
+    margin-top: 25px;
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    &__key {
+      background-color: $primary;
+      border-radius: 2px;
+      padding: 2px 4px;
+    }
+
+    &__value {
+      color: $secondary;
+    }
+  }
+
+  .language,
+  .contact,
+  .skills {
+    width: 100%;
+    margin-top: 25px;
+    &__title {
+      margin: 0;
+    }
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    &__key {
+      color: $gray;
+    }
+
+    &__value {
+      color: $gray;
+    }
+  }
+
+  .divider {
+    height: 2px;
+    // max-width: 220px;
+    width: 100%;
+    color: $divider;
+    margin: 0;
+    margin-top: 32px;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 32px;
+  }
+}
