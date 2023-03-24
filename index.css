@@ -12,9 +12,15 @@ body {
   display: flex;
   margin: 0 auto;
 }
+@media screen and (max-width: 1340px) {
+  .app {
+    flex-direction: column-reverse;
+  }
+}
 .app .content {
   max-width: 970px;
   margin: 0 auto;
+  width: 100%;
 }
 .app .primary {
   color: #ffb400;
@@ -43,6 +49,16 @@ body {
   background: white;
   padding: 8px;
   padding: 0 60px;
+}
+@media screen and (max-width: 680px) {
+  .intro {
+    flex-direction: column;
+  }
+}
+.intro__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .intro__content {
   display: flex;
@@ -122,6 +138,10 @@ body {
   text-transform: capitalize;
   text-align: center;
 }
+.services .service__link--primary {
+  color: #ffb400;
+  font-weight: 700;
+}
 
 .education {
   display: flex;
@@ -163,6 +183,11 @@ body {
   text-transform: capitalize;
   background-color: white;
 }
+@media screen and (max-width: 680px) {
+  .education__item {
+    flex-direction: column;
+  }
+}
 .education__item__date {
   margin-top: 8px;
 }
@@ -180,7 +205,8 @@ body {
   flex-direction: column;
 }
 .education__item__info {
-  width: 536px;
+  max-width: 536px;
+  width: 100%;
 }
 .education__item__info__description {
   color: #767676;
@@ -232,6 +258,11 @@ body {
   text-transform: capitalize;
   background-color: white;
 }
+@media screen and (max-width: 680px) {
+  .work__item {
+    flex-direction: column;
+  }
+}
 .work__item__date {
   margin-top: 8px;
 }
@@ -249,7 +280,8 @@ body {
   flex-direction: column;
 }
 .work__item__info {
-  width: 536px;
+  max-width: 536px;
+  width: 100%;
 }
 .work__item__info__description {
   color: #767676;
@@ -278,6 +310,7 @@ body {
 }
 .sidebar__info__image {
   border-radius: 50%;
+  margin-top: 50px;
 }
 .sidebar__info__name {
   font-size: 1.125rem;
@@ -364,6 +397,17 @@ body {
 .sidebar .button {
   width: 100%;
   margin: 32px 0;
+}
+@media screen and (max-width: 1340px) {
+  .sidebar {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+  }
+  .sidebar .icons__container {
+    max-width: 350px;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
