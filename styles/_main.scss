@@ -1,9 +1,7 @@
 @import './_variables.scss';
-
 * {
   box-sizing: border-box;
 }
-
 body {
   background-color: #e5e5e5;
 }
@@ -30,21 +28,5 @@ body {
 
   .secondary {
     color: $secondary;
-  }
-
-  button {
-    padding: 16px 32px;
-    background-color: $primary;
-    text-align: center;
-    border: none;
-    border-radius: 4px;
-    font-weight: 500;
-    font-style: normal;
-    cursor: pointer;
-    img {
-      margin-left: 10px;
-      width: 10px;
-      height: 10px;
-    }
   }
 }
